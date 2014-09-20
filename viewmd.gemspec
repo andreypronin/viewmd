@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = Viewmd::VERSION
   spec.authors       = ['moonfly (Andrey Pronin)']
   spec.email         = ['moonfly.msk@gmail.com']
-  spec.summary       = %q{Command line tool for viewing your Markdown file in local browser before committing to Github}
-  spec.description   = %q{Command line tool for viewing your Markdown file in local browser before committing to Github}
+  spec.summary       = %q{Command line tool for viewing Markdown files (GitHub Markup) in a browser}
+  spec.description   = %q{Command line tool for viewing Markdown files (GitHub Markup) in a browser}
   spec.homepage      = 'https://github.com/moonfly/viewmd'
   spec.license       = "MIT"
 

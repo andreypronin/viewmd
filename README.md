@@ -1,8 +1,12 @@
 # Viewmd
 
-Viewmd is a command line tool for viewing your Markdown files (for example and most often, README.md) in your local browser before committing to GitHub. Uses GitHub Markup parser, so the result should look very close to what you'd see on Github if you put the file there.
+Viewmd is a command line tool for viewing your Markdown files (e.g. README.md) in your local browser. Uses GitHub Markup parser, so the result should look very close to what you'd see on Github if you put the file there.
 
-I guess, we all hate checking in the files with bugs. In case of Markdown files like README.md, it's possible to make some little mistake while editing the file (e.g. forget the trailing triple-backticks) and end up with an incorrectly formatted file checked in to the repository. Seeing it only on Github and having to do another little check-in just to fix this little formatting mistakes seens like an intidy process to me. Thus I created this really simple tool to see how the file would look like *before* committing. 
+I guess, we all hate committing files with bugs. In case of Markdown files, like README.md, it's possible to make some little mistake while editing the file (e.g. forget the trailing triple-backticks) and end up with an incorrectly formatted file checked in to your repository. Seeing it only on GitHub already, for example, and having to do another little fix & commit just to fix this little formatting mistake seens like an untidy process to me. Thus I created this really simple command-line tool to see how the file would look like *before* committing. 
+
+It's really simple and doesn't try to catch all errors (e.g. trying to open a non-existent file).
+
+Please note that I tested it on MacOS only. If you use other OS in your development environment, it may not work. It actually uses [Launchy](https://github.com/copiousfreetime/launchy) for opening files, so it will all depend on Launchy's support for your OS.
 
 ## Installation
 
@@ -39,13 +43,13 @@ The public API should not be considered stable.
 
 ## Dependencies
 
-* github-markup
-* redcarpet
-* launchy
+* [github-markup](https://github.com/github/markup)
+* [redcarpet](https://github.com/vmg/redcarpet)
+* [launchy](https://github.com/copiousfreetime/launchy)
 
 ## Contributing
 
-1. Fork it ( https://github.com/[my-github-username]/viewmd/fork )
+1. Fork it ( https://github.com/moonfly/viewmd/fork )
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
