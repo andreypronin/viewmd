@@ -1,6 +1,6 @@
 # Viewmd
 
-Viewmd is a command line tool for viewing your Markdown files (e.g. README.md) in your local browser. Uses GitHub Markup parser, so the result should look very close to what you'd see on Github if you put the file there.
+Viewmd is a command line tool for viewing your Markdown files (e.g. README.md) in your local browser. Uses [GitHub dialect](https://help.github.com/articles/github-flavored-markdown) of Markdown, so the result should look very close to what you'd see on Github if you put the file on GitHub.
 
 I guess, we all hate committing files with bugs. In case of Markdown files, like README.md, it's possible to make some little mistake while editing the file (e.g. forget the trailing triple-backticks) and end up with an incorrectly formatted file checked in to your repository. Seeing it only on GitHub already, for example, and having to do another little fix & commit just to fix this little formatting mistake seens like an untidy process to me. Thus I created this really simple command-line tool to see how the file would look like *before* committing. 
 
@@ -44,7 +44,7 @@ The public API should not be considered stable.
 ## Dependencies
 
 * [github-markup](https://github.com/github/markup)
-* [redcarpet](https://github.com/vmg/redcarpet)
+* [github-markdown](https://rubygems.org/gems/github-markdown)
 * [launchy](https://github.com/copiousfreetime/launchy)
 
 ## Contributing
