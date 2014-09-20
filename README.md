@@ -41,10 +41,16 @@ For a version number MAJOR.MINOR.PATCH, unless MAJOR is 0:
 Major version "zero" (0.y.z) is for initial development. Anything may change at any time. 
 The public API should not be considered stable. 
 
+Some email: ibm@ibm.com
+Some link: http://www.ibm.com
+Another link: www.ibm.com
+Emoji: :-) :) :( ;)
+
 ## Dependencies
 
 * [github-markup](https://github.com/github/markup)
 * [github-markdown](https://rubygems.org/gems/github-markdown)
+* [html-pipeline](https://github.com/jch/html-pipeline)
 * [launchy](https://github.com/copiousfreetime/launchy)
 
 ## Contributing
