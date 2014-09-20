@@ -1,6 +1,6 @@
 # Viewmd
 
-Viewmd is a command line tool for viewing your Markdown files (e.g. README.md) in your local browser. Uses [GitHub dialect](https://help.github.com/articles/github-flavored-markdown) of Markdown, so the result should look very close to what you'd see on Github if you put the file on GitHub.
+Viewmd is a command line tool for viewing your Markdown files (e.g. README.md) in your local browser. Uses [GitHub dialect](https://help.github.com/articles/github-flavored-markdown) of Markdown and some elements of [GitHub CSS for syntax highlighting](https://github.com/aahan/pygments-github-style), so the result should resemble what you'd see on Github once you commit the file.
 
 I guess, we all hate committing files with bugs. In case of Markdown files, like README.md, it's possible to make some little mistake while editing the file (e.g. forget the trailing triple-backticks) and end up with an incorrectly formatted file checked in to your repository. Seeing it only on GitHub already, for example, and having to do another little fix & commit just to fix this little formatting mistake seens like an untidy process to me. Thus I created this really simple command-line tool to see how the file would look like *before* committing. 
 
@@ -10,17 +10,9 @@ Please note that I tested it on MacOS only. If you use other OS in your developm
 
 ## Installation
 
-If you prefer managing your tools through your application's Gemfile, add this line there:
+This gem has many GitHub-specific dependencies (primarily, due to the use of [html-pipeline](https://github.com/jch/html-pipeline)). So, gem version conflicts are quite likely if you try to install this tool using Gemfile.
 
-```ruby
-gem 'viewmd', group: :development, require: false
-```
-
-And then execute:
-
-    $ bundle
-
-Or, better yet, as with all generic dev-tools, install the gem yourself environment-wide as:
+Install the gem yourself environment-wide as:
 
     $ gem install viewmd
 
@@ -41,17 +33,16 @@ For a version number MAJOR.MINOR.PATCH, unless MAJOR is 0:
 Major version "zero" (0.y.z) is for initial development. Anything may change at any time. 
 The public API should not be considered stable. 
 
-Some email: ibm@ibm.com
-Some link: http://www.ibm.com
-Another link: www.ibm.com
-Emoji: :-) :) :( ;)
-
 ## Dependencies
 
-* [github-markup](https://github.com/github/markup)
-* [github-markdown](https://rubygems.org/gems/github-markdown)
 * [html-pipeline](https://github.com/jch/html-pipeline)
+* [github-markdown](https://rubygems.org/gems/github-markdown)
+* [github-linguist](https://github.com/github/linguist)
+* [pygments.rb](https://github.com/tmm1/pygments.rb)
+* [rinku](https://github.com/vmg/rinku)
+* [sanitize](https://github.com/rgrove/sanitize)
 * [launchy](https://github.com/copiousfreetime/launchy)
+* CSS from [pygments-github-style](https://github.com/aahan/pygments-github-style)
 
 ## Contributing
 
