@@ -1,0 +1,9 @@
+#!/usr/bin/env ruby
+require 'viewmd'
+
+if ARGV.count == 1 && File.exists?(ARGV.first)
+  Viewmd::view(ARGV.first)
+else
+  puts "Viewmd (ver #{Viewmd::VERSION}): view Markdown (GitHub Markup) file in a browser"
+  puts "    Usage: viewmd <md-file>"
+end
